@@ -1,0 +1,18 @@
+name: signle varibale workflow
+
+on:
+  workflow_dispatch
+
+env:
+  cloud: aws_cloud
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greetings: Hello from job !!
+    steps:
+      -name: "Hello job step"
+      run: echo "running hello job step"    
+      
+
