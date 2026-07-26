@@ -13,6 +13,6 @@ jobs:
       Greetings: Hello from job !!
     steps:
       -name: "Hello job step"
-      run: echo "running hello job step"    
+      run: echo "$Greetings is running on $cloud"    
       
 
