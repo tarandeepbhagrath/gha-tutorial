@@ -12,7 +12,7 @@ jobs:
     env:
       Greetings: Hello from job !!
     steps:
-      -name: "Hello job step"
-      run: echo " is running on "    
+      - name: "Hello job step"
+      run: echo "$Greetings is running on $cloud"    
       
 
